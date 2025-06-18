@@ -82,3 +82,7 @@ nav button {
     border: none;
     
 }
+
+button:hover {
+    cursor: pointer;
+}
