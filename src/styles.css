@@ -1,0 +1,84 @@
+* {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    background-image: url(./images/restaurant-background.jpg);
+    background-size: cover ;
+    min-height: 100vh;
+    
+    
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-wrap: nowrap;
+
+}
+nav,
+#content {
+
+    align-items: center;
+    justify-content: center;
+
+}
+#content {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 16px;
+    background-color: beige;
+    max-width: 400px;
+    place-self: center;
+    padding: 32px;
+    border-radius: 16px;
+
+}
+#content > * {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    max-width: 600px;
+    place-self: center;
+}
+.food-examples {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 32px;
+}
+.food-examples > * {
+    
+    height: 100px;
+    width: 100px;
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+#food1 {
+    background-image: url(/src/images/Bread.png);
+}
+#food2 {
+    background-image: url(/src/images/Shortcake.png);
+}
+#food3 {
+    background-image: url(/src/images/Tomato.png);
+}
+#food1,
+#food2,
+#food3 {
+    height: 100px;
+    width: 100px;
+    background-size: 100px;
+    background-repeat: no-repeat;
+
+}
+nav button {
+    font-size: larger;
+    flex: 1;
+    background-color: beige;
+    border: none;
+    
+}
